@@ -1,0 +1,24 @@
+# Bibliotecas do projeto, com as versões usadas.
+# Para o treino no Google Colab, o notebook instala só as bibliotecas de sobrevivência
+# e usa o torch com GPU que já vem no Colab.
+#
+# - scikit-survival 0.23.x exige scikit-learn >= 1.4 e < 1.6, por isso o 1.5.1.
+# - scipy 1.13.1 ainda tem scipy.integrate.simps, que o pycox 0.2.3 usa no Brier/IBS.
+
+# --- Dados e ML ---
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+scikit-learn==1.5.1
+
+# --- Modelos de sobrevivência clássicos ---
+lifelines==0.29.0          # Cox, Cox com splines, Kaplan-Meier, teste de Schoenfeld
+scikit-survival==0.23.1    # Random Survival Forest, Gradient Boosting, C-index de Uno
+
+# --- Deep learning de sobrevivência ---
+torch==2.3.1
+pycox==0.2.3               # DeepSurv (CoxPH) e DeepHit
+torchtuples==0.2.2
+
+# --- Utilidades ---
+matplotlib==3.9.0

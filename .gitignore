@@ -1,0 +1,8 @@
+# Os dados do SEER não podem ser redistribuídos: nunca versionar o CSV.
+*.csv
+
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
